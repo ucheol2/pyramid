@@ -1,0 +1,3 @@
+$('#user_list').fadeOut('fast');
+$('#user_list').html('<%= escape_javascript(render partial: 'user_list', locals: {users: @users}) %>');
+$('#user_list').fadeIn('fast');
