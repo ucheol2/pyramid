@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20160620123112) do
     t.string   "university"
     t.string   "gender"
     t.datetime "birthday"
-    t.integer  "age"
+    t.integer  "performance"
     t.boolean  "married"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

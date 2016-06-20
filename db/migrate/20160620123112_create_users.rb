@@ -9,7 +9,7 @@ class CreateUsers < ActiveRecord::Migration
 
       t.datetime :birthday
 
-      t.integer :age
+      t.integer :performance
 
       t.boolean :married
 
