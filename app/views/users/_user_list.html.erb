@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>GRADE</th>
+      <th>EMAIL</th>
+      <th>UNIVERSITY</th>
+      <th>GENDER</th>
+      <th>BIRTHDAY</th>
+      <th>AGE</th>
+      <th>MARRIED</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.each do |u| %>
+      <tr>
+        <td><%= u.name %></td>
+        <td><%= u.grade %></td>
+        <td><%= u.email %></td>
+        <td><%= u.university %></td>
+        <td><%= u.gender %></td>
+        <td><%= u.birthday.strftime('%F') %></td>
+        <td><%= u.age %></td>
+        <td><%= u.married %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
