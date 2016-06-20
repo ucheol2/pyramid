@@ -1,6 +1,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>NAME</th>
       <th>GRADE</th>
       <th>EMAIL</th>
@@ -14,6 +15,7 @@
   <tbody>
     <% users.each do |u| %>
       <tr>
+        <td><%= u.id %></td>
         <td><%= u.name %></td>
         <td><%= u.grade %></td>
         <td><%= u.email %></td>
