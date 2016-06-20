@@ -1,3 +1,7 @@
 $('#user_list').fadeOut('fast');
 $('#user_list').html('<%= escape_javascript(render partial: 'user_list', locals: {users: @users}) %>');
 $('#user_list').fadeIn('fast');
+
+// Add more parameters by get method
+// Example) window.history.pushState('','','/?query1=value1&query2=value2&query3=value3')
+window.history.pushState('','','/?name=<%= params[:name] %>');
